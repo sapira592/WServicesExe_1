@@ -2,7 +2,7 @@
 
 ### Instruction to use Students Gareds APP
 
-* The app support 4 Url addresses:
+* The app support 5 Url addresses:
 
 1. https://sapirapp.herokuapp.com --> in order to verify that the server is connected 
 
@@ -21,6 +21,8 @@
    You can type any id insted of 2015.
    The num of ID which saved in the DataBase are 2014, 2015.
    If you pass any other number that is not 2014/2015, you'll get a messagק "No excellence students in ________".
+
+5. https://sapirapp.herokuapp.com/error --> return an error message.
     
   
  
