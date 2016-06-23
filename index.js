@@ -6,7 +6,7 @@ var express = require('express'),
  var allStudents;
 
 
-//-----------------------Commection to Mongo----------------------------
+//-----------------------Connection to Mongo----------------------------
 
 var mongoose = require('mongoose');
 var db = mongoose.connect('mongodb://usr_d:pass_d@ds011923.mlab.com:11923/exercise1');
@@ -32,7 +32,7 @@ mongoose.connection.once('open',function() {
  app.get('/getAllExcellenceStudent', function (req, res) { 
    var result = students.getAllExcellenceStudent(allStudents); 
    res.set('getAllExcellenceStudent', 'ok'); 
-   res.json({"Excellence Student: " :result}); 
+   res.json(result); 
  }); 
   
 // URL required - localhost:3000/getStudGrade/1 - you can type any number...
